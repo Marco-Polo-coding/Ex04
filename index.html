@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Home</title>
+</head>
+
+<body>
+  <header>
+    <button id="menu-anchor" popovertarget="menu-popover">☰ Secciones</button>
+    <ul id="menu-popover" popover>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="worldnews.html">World News</a></li>
+      <li><a href="sport.html">Sports</a></li>
+      <li><a href="finance.html">Finance</a></li>
+      <li><a href="technology.html">Technology</a></li>
+      <li><a href="entertainment.html">Entertainment</a></li>
+    </ul>
+    <h1>Home</h1>
+  </header>
+  <!-- Componente personalizado -->
+  <div id="grid-container">
+  </div>
+  <news-viewer></news-viewer>
+
+  <!-- Plantilla para un artículo -->
+  <template id="article-template">
+    <div class="article">
+      <a class="link" href="#">
+        <h3 class="title"></h3>
+      </a>
+      <p><strong>Autor:</strong> <span class="author"></span></p>
+      <p class="description"></p>
+      <hr>
+    </div>
+  </template>
+
+  <script src="news-viewer.js"></script>
+
+</body>
+
+</html>
